@@ -1,13 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="https://png.pngtree.com/png-vector/20220603/ourmid/pngtree-skull-icon-logo-vector-illuatration-blood-png-image_4839552.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anurag Chaudhary - Portfolio</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Store the original title after the DOM is fully loaded
+      const originalTitle = document.title;
+
+      // Variable to store the interval ID
+      let titleInterval;
+
+      // Listen for visibility change events
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          // Titles to alternate when the tab is hidden
+          const titles = ["👽 You are lost", "🔥 Come Back!"];
+          let index = 0;
+
+          // Instantly set the first alternate title
+          document.title = titles[index];
+
+          // Start alternating the titles
+          titleInterval = setInterval(() => {
+            index = (index + 1) % titles.length; // Toggle between titles
+            document.title = titles[index];
+          }, 100);
+        } else {
+          // Clear the interval when the tab becomes visible
+          clearInterval(titleInterval);
+
+          // Restore the original title after a brief delay
+          setTimeout(() => {
+            document.title = originalTitle;
+          }, 50);
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

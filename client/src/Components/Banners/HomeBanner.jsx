@@ -1,7 +1,11 @@
 import React from "react";
 
 const HomeBanner = () => {
-  return <>homepage</>;
+  return (
+    <>
+      <h1>hii</h1>
+    </>
+  );
 };
 
 export default HomeBanner;
