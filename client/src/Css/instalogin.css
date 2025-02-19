@@ -1,0 +1,142 @@
+/* General Reset */
+
+  
+  /* Wrapper */
+  .section-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .header .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 14px;
+    background: #f5f5f5;
+  }
+  
+  .input-box input:focus {
+    border-color: #a8a8a8;
+    outline: none;
+  }
+  
+  /* Login Button */
+  .button-box .btn {
+    background: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .button-box .btn:hover {
+    background: #0078cc;
+  }
+  
+  /* Forgot Password */
+  .forgot {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #00376b;
+    text-decoration: none;
+  }
+  
+  .forgot:hover {
+    text-decoration: underline;
+  }
+  
+  /* Signup Link */
+  .text {
+    font-size: 14px;
+  }
+  
+  .text a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* App Download Section */
+  .app {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .app p {
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-bottom: 10px;
+  }
+  
+  .app-img a img {
+    width: 135px;
+    margin: 5px;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #8e8e8e;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: #8e8e8e;
+  }
+  
+  .footer-nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-logo {
+    display: block;
+    margin-top: 10px;
+  }
+  

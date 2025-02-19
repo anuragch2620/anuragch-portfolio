@@ -17,13 +17,13 @@ const Header = () => {
         {/* Social Media Links */}
         <div className="col text-end">
           <Link
-            to="/fbpage.jsx" // Use `to` for internal navigation
+            to="/facebooklogin" // Use `to` for internal navigation
             className="text-black mx-2"
           >
             <FaFacebook size={20} />
           </Link>
           <Link
-            to="/instapage.jsx" // Use `to` for internal navigation
+            to="/igpage" // Use `to` for internal navigation
             className="text-black mx-2"
           >
             <FaInstagram size={20} />

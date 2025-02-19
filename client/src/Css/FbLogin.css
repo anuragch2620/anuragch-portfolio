@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fb-custom-body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f4f7;
+}
+
+.fb-custom-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fb-custom-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fb-custom-text {
+  margin-right: 7rem;
+}
+
+.fb-custom-logo {
+  font-size: 3.5rem;
+  color: #1877f2;
+}
+
+.fb-custom-text p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.fb-custom-form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 2rem;
+  width: 530px;
+  height: 380px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.fb-custom-input {
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.fb-custom-input:focus {
+  border: 1.8px solid #1877f2;
+}
+
+.fb-custom-login {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.fb-custom-login:hover {
+  background: #0f71f1;
+  cursor: pointer;
+}
+
+.fb-custom-link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+  color: #1877f2;
+}
+
+.fb-custom-divider {
+  background: #f7f7f7;
+  margin: 1rem;
+}
+
+.fb-custom-signup {
+  outline: none;
+  border: none;
+  background: #06b909;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  color: #fff;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.fb-custom-signup:hover {
+  background: #03ad06;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+  .fb-custom-text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .fb-custom-form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  .fb-custom-input,
+  .fb-custom-login,
+  .fb-custom-link,
+  .fb-custom-signup {
+    font-size: 1.5rem;
+  }
+
+  .fb-custom-flex {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  .fb-custom-text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .fb-custom-form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  .fb-custom-input,
+  .fb-custom-login,
+  .fb-custom-link,
+  .fb-custom-signup {
+    font-size: 1.5rem;
+  }
+
+  .fb-custom-flex {
+    flex-direction: column;
+  }
+}

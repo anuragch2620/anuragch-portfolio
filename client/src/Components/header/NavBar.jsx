@@ -129,6 +129,22 @@ const NavBar = () => {
         { path: "#", content: "Label Design", icon: "bi bi-tags" }, // Changed
       ],
     },
+    {
+      path: "#",
+      content: "For Students",
+      icon: "bi bi-person",
+      submenu: [
+        { path: "#", content: "Source code", icon: "bi bi-code-slash" },
+        { path: "#", content: "Notes", icon: "bi bi-journal-text" },
+        {
+          path: "#",
+          content: "Courses",
+          icon: "bi bi-book",
+        },
+        { path: "#", content: "Contact Us", icon: "bi bi-telephone" },
+      ],
+    }
+    
   ];
 
   return (

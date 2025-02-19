@@ -1,0 +1,30 @@
+.bg-fb-blue {
+    background-color: #3b5998 !important;
+    width: 100vw;
+}
+h1.logo {
+    font-size: 4em;
+}
+.btn.btn-fb {
+    background-color: #4267b2;
+    border-color: #29487d;
+    border-radius: 0;
+    width: 100vw;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.btn.btn-fb {
+    background-color: #4267b2;
+    border-color: #29487d;
+    border-radius: 0;
+    color: #ffffff;
+    width: auto;
+}

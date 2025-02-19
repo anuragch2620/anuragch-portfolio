@@ -1,10 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import routing libraries
-import AnnouncementBar from "./Components/header/AnnouncementBar"; // Import components
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
+import AnnouncementBar from "./Components/header/AnnouncementBar"; 
 import Header from "./Components/header/Header";
 import NavBar from "./Components/header/NavBar";
-import InstaPage from "./Pages/instapage";
-import FbPage from "./Pages/fbpage"; // Ensure proper import (name should start with a capital letter)
+import IgPage from "./Pages/IgPage"; // ✅ Fix Component Name
+import IgSignup from "./Pages/IgSignup";
+import FbLogin from "./Pages/FbLogin";
+import FacebookSignup from "./Pages/facebookSignup";
+import Home from './Pages/home';
 
 const App = () => {
   return (
@@ -12,11 +15,13 @@ const App = () => {
       <AnnouncementBar />
       <Header />
       <NavBar />
-      {/* Routing for different pages */}
+      
       <Routes>
-        <Route path="/" element={<Home />} /> {/* Default page route */}
-        <Route path="/instapage" element={<InstaPage />} />
-        <Route path="/fbpage" element={<FbPage />} />
+      <Route path="/" element={<Home/>} /> 
+        <Route path="/igpage" element={<IgPage />} /> 
+        <Route path="/instagramsignup" element={<IgSignup />} /> 
+        <Route path="/facebooklogin" element={<FbLogin/>} /> 
+        <Route path="/facebooksignup" element={<FacebookSignup/>} /> 
       </Routes>
     </Router>
   );
