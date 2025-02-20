@@ -1,0 +1,30 @@
+/* Unique Footer Styling - DipanshuTech Footer */
+
+  .contact_info {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    min-height: 165px;
+    position: relative;
+    padding-top: 45px;
+    text-align: center;
+}
+.contact_icons {
+    color: #f1833e;
+    background-color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 69.00000000000021, 255, 0.2);
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    position: absolute;
+}
