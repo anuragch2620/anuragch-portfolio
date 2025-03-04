@@ -9,6 +9,8 @@ import FbLogin from "./Pages/FbLogin";
 import FacebookSignup from "./Pages/facebookSignup";
 import Home from "./Pages/home";
 import ReviewShow from "./Components/Reviews/ReviewShow";
+import DevLogin from "./Components/MainLogin/DevLogin";
+import HtmlWebsite from "./Pages/WebDesign/HtmlWebsite";
 // import ReviewPush from "./Components/Reviews/ReviewPush";
 
 const App = () => {
@@ -24,7 +26,9 @@ const App = () => {
         <Route path="/instagramsignup" element={<IgSignup />} />
         <Route path="/facebooklogin" element={<FbLogin />} />
         <Route path="/facebooksignup" element={<FacebookSignup />} />
+        <Route path="/devlogin" element={<DevLogin />} />
         <Route path="/reviews" element={<ReviewShow />} />
+        <Route path="/HtmlWebsite" element={<HtmlWebsite />} />
         {/* <Route path="/add-review" element={<ReviewPush />} /> */}
       </Routes>
     </Router>

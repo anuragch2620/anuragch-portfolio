@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import BlackLogo from "../../assets/black_logo-removebg-preview.png";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,11 +12,15 @@ const NavBar = () => {
 
   const navData = [
     {
-      path: "/Pages/onpopproduct.html",
+      // path: "/Pages/onpopproduct.html",
       content: "Web Design",
       icon: "bi bi-window",
       submenu: [
-        { path: "#", content: "HTML Website Design", icon: "bi bi-file-code" },
+        {
+          path: "/HtmlWebsite",
+          content: "HTML Website Design",
+          icon: "bi bi-file-code",
+        },
         {
           path: "#",
           content: "WordPress Website Design",
@@ -143,9 +149,11 @@ const NavBar = () => {
         },
         { path: "#", content: "Contact Us", icon: "bi bi-telephone" },
       ],
-    }
-    
+    },
   ];
+
+  const [showSearch, setShowSearch] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <>
@@ -153,25 +161,46 @@ const NavBar = () => {
         {/* Top Navigation Bar */}
         <div className="container-fluid">
           <div className="container">
-            <div className="row py-3">
-              <div className="col d-flex justify-content-start gap-3">
-                <a href="#">
-                  <i className="bi bi-search-heart fs-3 text-dark"></i>
-                </a>
+            <div className="row py-3 align-items-center justify-content-between">
+              {/* Left Side: Search Bar */}
+              <div className="col-auto d-flex align-items-center gap-3">
+                {!showSearch && (
+                  <a href="#" onClick={() => setShowSearch(true)}>
+                    <i className="bi bi-search-heart fs-3 text-dark"></i>
+                  </a>
+                )}
+                {showSearch && (
+                  <div className="d-flex align-items-center border rounded px-2">
+                    <input
+                      type="text"
+                      className="form-control "
+                      placeholder="Search..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      autoFocus
+                    />
+                    <button
+                      className="btn-search"
+                      onClick={() => setShowSearch(false)}
+                    >
+                      <i className="bi bi-x-circle"></i>
+                    </button>
+                  </div>
+                )}
               </div>
+
+              {/* Center: Logo */}
               <div className="col text-center">
                 <a href="/" className="logo-link">
-                  <img
-                    src="https://www.ultratribe.com/cdn/shop/files/Tribe_Logo_Normal_11dd4a48-8990-49bc-84c6-9722de32fdf4.png?v=1641378383&width=150"
-                    alt="Tribe Logo"
-                    className="logo"
-                  />
+                  <img src={BlackLogo} alt="Anurag Dev" className="logo" />
                 </a>
               </div>
-              <div className="col d-flex justify-content-end gap-3">
-                <a href="#">
+
+              {/* Right Side: Profile & Cart Icons */}
+              <div className="col-auto d-flex justify-content-end gap-3">
+                <Link to={"/devlogin"}>
                   <i className="bi bi-person-circle fs-3 text-dark"></i>
-                </a>
+                </Link>
                 <a href="#">
                   <i className="bi bi-cart4 fs-3 text-dark"></i>
                 </a>

@@ -12,6 +12,7 @@ import ReviewShow from "../Components/Reviews/ReviewShow";
 // import ReviewPush from "../Components/Reviews/ReviewPush";
 import ValuePartnerSlider from "../Components/ValuePartnerSlider";
 import Footer from "../Components/Footer";
+import PortfolioSection from "../Components/PortfolioSection";
 
 const images = [
   "https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/11/Leading-Mobile-App-Services-In-Greater-Noida.webp.bv.webp",
@@ -252,7 +253,7 @@ const Home = () => {
                 are dedicated to excellence in every project we undertake.
               </p>
 
-              <div className="pt-3 aboutbtnright">
+              <div className=" btn-jaat">
                 <a href="/about-us/" className=" ">
                   More About Us
                 </a>
@@ -284,13 +285,13 @@ const Home = () => {
           <div className="row">
             {servicesData.map((service, index) => (
               <div className="col-lg-4 col-sm-6" key={index}>
-                <a href={service.link}>
+                <a href={service.link} id="service_box_a">
                   <div className="service_box">
                     <div className="service_icons">{service.icon}</div>
                     <h6 className="services_title">{service.title}</h6>
                     <p>{service.description}</p>
                     <div className="text-left">
-                      <span className="btn btn-primary w-50">Read More</span>
+                      <span className="btn btn-jaat w-50">Read More</span>
                     </div>
                   </div>
                 </a>
@@ -300,9 +301,9 @@ const Home = () => {
 
           <div className="row mt-5">
             <div className="col-md-12">
-              <div className="text-left">
+              <div className="text-center">
                 <a href="/services/" className="" w-auto>
-                  <button>View all Services</button>
+                  <button className="btn-jaat2">View all Services</button>
                 </a>
               </div>
             </div>
@@ -315,33 +316,38 @@ const Home = () => {
         <ReviewShow />
       </section>
       <section>{/* <ReviewPush /> */}</section>
-      <section>
-        <div className="row align-items-center two-review-plateform p-5">
-          <div className="col-6 img-col-cls first d-flex justify-content-start">
-            <a target="_blank" href="/">
-              <img
-                bv-data-src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/2-1.webp.bv.webp"
-                src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/2-1.webp.bv.webp"
-                className="img-fluid custom-img img-google-review bv-tag-attr-replace bv-lazyload-tag-img"
-                alt="Google Review"
-              />
-            </a>
+      <div className="container">
+        <PortfolioSection />
+
+        <section>
+          <div className="row align-items-center two-review-plateform p-5">
+            <div className="col-6 img-col-cls first d-flex justify-content-start">
+              <a target="_blank" href="/">
+                <img
+                  bv-data-src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/2-1.webp.bv.webp"
+                  src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/2-1.webp.bv.webp"
+                  className="img-fluid custom-img img-google-review bv-tag-attr-replace bv-lazyload-tag-img"
+                  alt="Google Review"
+                />
+              </a>
+            </div>
+            <div className="col-6 img-col-cls second d-flex justify-content-end">
+              <a
+                target="_blank"
+                href="https://www.justdial.com/jdmart/Delhi/Dipanshu-Tech-Solutions-Pvt-Ltd-Airtel-Office-Greater-Noida/011PXX11-XX11-191010175226-L8B7_BZDET/catalogue"
+              >
+                <img
+                  bv-data-src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/1-1.webp.bv.webp"
+                  src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/1-1.webp.bv.webp"
+                  className="img-fluid custom-img img-justdial bv-tag-attr-replace bv-lazyload-tag-img"
+                  alt="JustDial Logo"
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 img-col-cls second d-flex justify-content-end">
-            <a
-              target="_blank"
-              href="https://www.justdial.com/jdmart/Delhi/Dipanshu-Tech-Solutions-Pvt-Ltd-Airtel-Office-Greater-Noida/011PXX11-XX11-191010175226-L8B7_BZDET/catalogue"
-            >
-              <img
-                bv-data-src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/1-1.webp.bv.webp"
-                src="https://dipanshutech.com/wp-content/uploads/al_opt_content/IMAGE/dipanshutech.com/wp-content/uploads/2024/08/1-1.webp.bv.webp"
-                className="img-fluid custom-img img-justdial bv-tag-attr-replace bv-lazyload-tag-img"
-                alt="JustDial Logo"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
       <section>
         <ValuePartnerSlider />
       </section>

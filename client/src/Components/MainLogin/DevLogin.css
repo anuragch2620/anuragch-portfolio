@@ -1,0 +1,174 @@
+/* DevLogin.css */
+
+.devlogin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #3f3c4f, #3c3b4d);
+    padding: 20px;
+  }
+  
+  .devlogin-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .devlogin-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1e439b;
+    border-bottom: 3px solid #ff5501;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .devlogin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .devlogin-input-group {
+    position: relative;
+  }
+  
+  .devlogin-input-group input {
+    width: 100%;
+    padding: 10px 40px;
+    border: 2px solid #bebed2;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .devlogin-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #78788c;
+  }
+  
+  .devlogin-password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #78788c;
+  }
+  
+  .devlogin-forgot {
+    text-align: right;
+    font-size: 12px;
+  }
+  
+  .devlogin-submit {
+    background: #646171;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .devlogin-submit:hover {
+    background: #4a4757;
+  }
+  
+  .devlogin-divider {
+    position: relative;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+  
+  .devlogin-divider:before,
+  .devlogin-divider:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #bebed2;
+  }
+  
+  .devlogin-divider:before {
+    left: 0;
+  }
+  
+  .devlogin-divider:after {
+    right: 0;
+  }
+  
+
+  
+  .devlogin-google {
+    background: #e04c40;
+  }
+  
+  .devlogin-facebook {
+    background: #2e4da7;
+  }
+  
+  .devlogin-google:hover {
+    background: #d43b32;
+  }
+  
+  .devlogin-facebook:hover {
+    background: #1e3d8b;
+  }
+  
+  .devlogin-toggle button {
+    background: none;
+    border: none;
+    color: #1e439b;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .devlogin-toggle button:hover {
+    text-decoration: underline;
+  }
+  .devlogin-instagram {
+    background-color: #e4405f;
+    color: white;
+  }
+  
+  .devlogin-instagram:hover {
+    background-color: #c13584;
+  }
+  
+  .devlogin-github {
+    background-color: #333;
+    color: white;
+  }
+  
+  .devlogin-github:hover {
+    background-color: #24292e;
+  }
+  .devlogin-social-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .devlogin-google,
+  .devlogin-facebook,
+  .devlogin-github,
+  .devlogin-instagram {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }

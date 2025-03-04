@@ -12,7 +12,7 @@
     text-align: center;
 }
 .contact_icons {
-    color: #f1833e;
+    color: #000000;
     background-color: #FFFFFF;
     border-radius: 50px 50px 50px 50px;
     box-shadow: 0px 3px 10px 0px rgba(0, 69.00000000000021, 255, 0.2);
@@ -27,4 +27,34 @@
     left: 50%;
     transform: translate(-50%, 0px);
     position: absolute;
+}
+.contact_info ul li a {
+  color: black;
+}
+.contact_info p a {
+  color: black;
+}
+.social_links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.social_links li {
+  display: inline-block;
+}
+
+.social_links a {
+  color: white; /* सभी आइकन सफेद होंगे */
+  font-size: 20px; /* आइकन का साइज */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social_links a:hover {
+  color: #f1f1f1; /* होवर करने पर हल्का सफेद */
+  transform: scale(1.1); /* थोड़ा ज़ूम इफ़ेक्ट */
+}
+.footer_link  a {
+  color: white;
 }

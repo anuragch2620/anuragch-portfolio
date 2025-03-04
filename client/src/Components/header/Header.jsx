@@ -9,9 +9,13 @@ const Header = () => {
       <div className="row text-black py-2 px-3">
         {/* Phone Number */}
         <div className="col d-flex align-items-center">
-          <PiPhoneCallFill className="me-2 text-black" size={20} />{" "}
-          {/* Phone Icon */}
-          <span>+91 9990066707</span>
+          <a
+            href="tel:+919990066707"
+            className="d-flex align-items-center text-decoration-none text-black"
+          >
+            <PiPhoneCallFill className="me-2" size={20} />
+            <span>+91 9990066707</span>
+          </a>
         </div>
 
         {/* Social Media Links */}

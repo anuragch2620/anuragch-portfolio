@@ -1,5 +1,6 @@
 import React from "react";
 import "../Css/footer.css";
+import GoldenLogo from "../assets/golden_logo-removebg-preview.png";
 
 const Footer = () => {
   return (
@@ -72,11 +73,7 @@ const Footer = () => {
             <div className="col-lg-4 pb-4 pb-lg-0 col-md-6">
               <div className="footer_logo mb-4">
                 <a href="" className="logo">
-                  <img
-                    src="https://www.ultratribe.com/cdn/shop/files/Tribe_Lo49bc-84c6-9722de32fdf4.png?v=1641378383&width=150"
-                    className="img-fluid"
-                    alt="Tribe Logo"
-                  />
+                  <img src={GoldenLogo} className="logo" alt="Tribe Logo" />
                 </a>
               </div>
               <p>
@@ -90,7 +87,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     href="https://www.facebook.com/DipanshuTECHSolutionsPvtLtd"
                   >
-                    <i className="fa fa-facebook"></i>
+                    <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li className="d-inline pe-1">
@@ -99,7 +96,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     href="https://twitter.com/DIPANSHUTECH"
                   >
-                    <i className="fa fa-twitter"></i>
+                    <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li className="d-inline pe-1">
@@ -108,7 +105,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     href="https://www.instagram.com/dipanshutech/"
                   >
-                    <i className="fa fa-instagram"></i>
+                    <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li className="d-inline pe-1">
@@ -117,7 +114,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     href="https://in.linkedin.com/company/dipanshutech"
                   >
-                    <i className="fa fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li className="d-inline pe-1">
@@ -126,7 +123,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     href="https://www.youtube.com/channel/UCcXUqpn3lTeAobtnVeUmc8w"
                   >
-                    <i className="fa fa-youtube"></i>
+                    <i className="fab fa-youtube"></i>
                   </a>
                 </li>
               </ul>
