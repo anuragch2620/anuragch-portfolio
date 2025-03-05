@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AnnouncementBar from "./Components/header/AnnouncementBar";
 import Header from "./Components/header/Header";
 import NavBar from "./Components/header/NavBar";
-import IgPage from "./Pages/IgPage"; // ✅ Fix Component Name
+import IgPage from "./Pages/IgPage";
 import IgSignup from "./Pages/IgSignup";
 import FbLogin from "./Pages/FbLogin";
 import FacebookSignup from "./Pages/facebookSignup";
@@ -11,6 +11,7 @@ import Home from "./Pages/home";
 import ReviewShow from "./Components/Reviews/ReviewShow";
 import DevLogin from "./Components/MainLogin/DevLogin";
 import HtmlWebsite from "./Pages/WebDesign/HtmlWebsite";
+import Footer from "./Components/Footer";
 // import ReviewPush from "./Components/Reviews/ReviewPush";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/HtmlWebsite" element={<HtmlWebsite />} />
         {/* <Route path="/add-review" element={<ReviewPush />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 };

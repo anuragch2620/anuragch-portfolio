@@ -80,4 +80,235 @@
   .btn-secondary:hover {
     background: #e55b00;
   }
+
+  /* service card  */
+  .services_section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
   
+  .services_subtitle {
+    font-size: 18px;
+    color: #ff6600;
+    font-weight: 600;
+  }
+  
+  .services_title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .service_card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service_icon img {
+    max-width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .service_card_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service_list li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* pricing card  */
+
+  /* Section Styling */
+.pricing_section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Title Styling */
+.pricing_header {
+  margin-bottom: 40px;
+}
+
+.pricing_subtitle_text {
+  font-size: 18px;
+  color: #ff6600;
+  font-weight: 600;
+}
+
+.pricing_title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pricing_highlight {
+  color: #ff6600;
+}
+
+/* Grid Layout */
+.pricing_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Pricing Card */
+.pricing_card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing_card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing_active {
+  border: 2px solid #ff6600;
+  transform: scale(1.05);
+}
+
+/* Card Content */
+.pricing_card_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pricing_card_price {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+}
+
+.pricing_card_desc {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.pricing_card_features span {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.pricing_card_features i {
+  color: #ff6600;
+  margin-right: 5px;
+}
+
+/* Button Styling */
+.pricing_button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.pricing_button:hover {
+  background-color: #e65c00;
+}
+
+.pricing_button i {
+  margin-left: 5px;
+}
+.pricing-plan__one-single-pricing-plan {
+  background: #ffffff;
+  padding: 35px 35px 38px 35px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* lfy cycle  */
+
+/* Section Styling */
+.life_cycle_section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Title Styling */
+.life_cycle_header {
+  margin-bottom: 40px;
+}
+
+.life_cycle_title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.life_cycle_highlight {
+  color: #ff6600;
+}
+
+.life_cycle_subtext {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Grid Layout */
+.life_cycle_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card Styling */
+.life_cycle_card {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  background-color: aliceblue;
+  height: 150px;
+  margin-bottom: 15px;
+  margin-left: -20px;
+  position: relative;
+}
+
+.life_cycle_card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.life_cycle_icon img {
+  width: 80px;
+  height: auto;
+}
+
+.life_cycle_step_title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
